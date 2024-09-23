@@ -1,0 +1,1 @@
+This is a text file with Latin-1 encoding. Some special characters: ñ, ü, é
