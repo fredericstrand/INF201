@@ -68,8 +68,39 @@ class Complex:
     def conjugate(self):
         return Complex(self.re, -self.im)
     
-
+    # Print
     def __str__(self):
-        return f"{self.re} + {self.im}i"
+        if self.im == 0:
+            return f"{self.re}"
+        elif self.im > 0:
+            return f"{self.re} + {self.im}i"
+        else:  # Handle negative imaginary part
+            return f"{self.re} - {abs(self.im)}i"
+
+
+# Just the test cases given in task. This will be tested in examples.py and test folder
+'''z = Complex(1, 2)
+y = Complex(3, 4)
+
+print(z)                         
+
+print(z.re)
+print(z.im)
+
+print(Complex())
+print(Complex(5))
+
+print(z + y)
+print(z - y)
+
+print(z + 3)
+print(3 + z)
+print(z * 3)
+print(3 * z)
+
+print(z == y)
+print(z != y)
+
+print(z.conjugate())'''
 
     
