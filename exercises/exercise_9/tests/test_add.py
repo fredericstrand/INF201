@@ -1,5 +1,5 @@
 import pytest
-from ..warm_up import Vector2D
+from warm_up import Vector2D
 
 print("Running test_add.py")
 
